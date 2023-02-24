@@ -29,6 +29,10 @@ const extension = {
     const path = this.getPath(url);
     const env = this.getEnv(url);
 
+    if (path.array.includes("content")) {
+      return url.origin;
+    }
+
     switch (data_id) {
       case "aem": {
         return data_url.replace("$env", env).replace("$path", path.noExt);
