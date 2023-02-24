@@ -17,8 +17,12 @@ const extension = {
               const url = new URL(tab.url);
               const target = _self.getTargetUrl(url, data_url, data_id);
 
-              chrome.tabs.update(tab.id, { url: target });
-              window.close();
+              if (target) {
+                chrome.tabs.update(tab.id, { url: target });
+                window.close();
+              } else {
+                alert("Not an AEM page");
+              }
             });
           }
         });
@@ -28,6 +32,10 @@ const extension = {
   getTargetUrl: function (url, data_url, data_id) {
     const path = this.getPath(url);
     const env = this.getEnv(url);
+
+    if (!url.host.includes("aem-")) {
+      return;
+    }
 
     if (path.array.includes("content")) {
       return url.origin;
