@@ -2,7 +2,7 @@
 
 ## Instructions
 
-1. Download zip file and unpack
+1. [Download zip file](https://github.com/dchoi87/cedars-aem-extension/archive/refs/heads/main.zip) and unpack
 2. Go to chrome extensions menu (`chrome://extensions`)
 3. Toggle **Developer Mode** and click **Load Unpacked**
 4. Select unpacked folder
