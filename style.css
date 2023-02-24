@@ -1,0 +1,43 @@
+:root {
+  --white: #fff;
+  --lightgrey: #fafafa;
+  --grey: #ccc;
+  --shadow: #efefef73;
+  --red: #dc1e34;
+}
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background: var(--lightgrey);
+}
+.container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 16px;
+}
+.header {
+  display: flex;
+  margin-bottom: 24px;
+}
+.header img {
+  width: 100px;
+}
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+button {
+  cursor: pointer;
+  font-family: "Nunito Sans", sans-serif;
+  background: var(--white);
+  border: 0;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0px 5px 10px 2px var(--shadow);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+button:hover {
+  background: var(--red);
+  color: var(--white);
+}

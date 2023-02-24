@@ -1,0 +1,15 @@
+{
+  "name": "Cedars AEM Helper",
+  "version": "1.0.0",
+  "description": "Helper for navigating to the appropriate AEM page",
+  "manifest_version": 3,
+  "author": "Daniel Choi",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Cedars AEM Helper"
+  },
+  "permissions": ["activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
