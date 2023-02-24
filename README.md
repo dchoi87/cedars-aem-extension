@@ -15,7 +15,7 @@
 
 ## Usage
 
-From any AEM page (editor, dispatcher, etc.), click on the appropriate button to navigate to that url.
+From any AEM page (editor, dispatcher, etc.), click on extension icon and then click on the appropriate button to navigate to that url.
 
 ### Examples
 
